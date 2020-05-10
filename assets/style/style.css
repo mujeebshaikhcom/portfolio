@@ -1,0 +1,108 @@
+body {
+    background-image: linear-gradient(25deg, #222, black);
+    color: #929292;
+}
+a {
+    color: #929292;
+    transition: color 0.2s linear;
+}
+a:hover, a:active, a:focus {
+    color: #929292;
+    text-decoration: none;
+    transition: color 0.2s linear;
+}
+.ms_bold {
+    font-weight: 400;
+}
+.ms_light {
+    color: #fff;
+}
+.jumbotron.jumbotron-fluid {
+    background-image: linear-gradient(25deg, black, #222);
+    font-size: x-large;
+}
+.d-flex-cardParent {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work_box_card {
+    margin: 15px;
+    width: calc(50vw - 60px);
+    -webkit-width: calc(50vw - 60px);
+    -moz-width: calc(50vw - 60px);
+    height: calc(30vw - 60px);
+    -webkit-height: calc(30vw - 60px);
+    -moz-height: calc(30vw - 60px);
+    transform: translateY(0px);
+    transition: transform 0.3s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-text {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgba(0,0,0,0.35);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.work_box_card:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s linear;
+}
+.work_box_card a:hover .card-text {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.card-abt p, .copyR_strip p {
+    margin: 0;
+}
+.card-abt, .card-head {
+    padding: 15px;
+}
+.card-head h3 {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.work_box_card:nth-child(1){    background-image: url(../images/card-1.jpg);    }
+.work_box_card:nth-child(2){    background-image: url(../images/card-2.jpg);    }
+.work_box_card:nth-child(3){    background-image: url(../images/card-3.jpg);    }
+.work_box_card:nth-child(4){    background-image: url(../images/card-4.jpg);    }
+.work_box_card:nth-child(5){    background-image: url(../images/card-5.jpg);    }
+.work_box_card:nth-child(6){    background-image: url(../images/card-6.jpg);    }
+.copyR_strip {
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+.footer-body {
+    background-color: #111;
+}
+.footer-body > div {
+    padding-top: 15px;
+}
+.foot-social a {
+    padding: 8px;
+    font-size: 300%;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .work_box_card {
+        margin: 15px;
+        width: calc(100vw - 60px);
+        -webkit-width: calc(100vw - 60px);
+        -moz-width: calc(100vw - 60px);
+        height: calc(60vw - 60px);
+        -webkit-height: calc(60vw - 60px);
+        -moz-height: calc(60vw - 60px);
+    }
+}
+
+
+
+
